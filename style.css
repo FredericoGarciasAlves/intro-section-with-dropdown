@@ -1,0 +1,190 @@
+body {
+  background-color: var(--almost-white);
+  font-family: "Epilogue";
+  padding-bottom: 12.2rem;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  height: 7rem;
+  align-items: center;
+}
+.header .header-logo {
+  margin-right: 6.3rem;
+  width: 8.4rem;
+  height: 2.7rem;
+  margin-left: 4.1rem;
+}
+
+.header .icon-menu {
+  display: none;
+}
+
+.header .box-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-right: 4rem;
+}
+
+.header .box-menu .icon-menu-close {
+  display: none;
+}
+
+.header .box-menu .nav .ul-nav {
+  display: flex;
+  column-gap: 4rem;
+  font-size: 1.5rem;
+  color: var(--medium--gray);
+}
+
+.header .box-menu .nav .ul-nav li {
+  cursor: pointer;
+}
+
+.header .box-menu .nav .ul-nav li a {
+  color: var(--medium--gray);
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.header .box-menu .nav .ul-nav .company,
+.header .box-menu .nav .ul-nav .features {
+  display: flex;
+  column-gap: 0.9rem;
+  align-items: center;
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.header .box-menu .nav .ul-nav .features .list-features {
+  position: absolute;
+  display: none;
+  top: 100%; /* justo abaixo do botão */
+  right: 0;
+  /* gap pequeno e “vivo” */
+  padding: 24px;
+  border-radius: 10px;
+  flex-direction: column;
+  row-gap: 1.6rem;
+  background-color: var(--pure-white);
+}
+
+.header .box-menu .nav .ul-nav .features .list-features li a {
+  padding: 0;
+}
+
+.header .box-menu .nav .ul-nav .company .list-company {
+  position: absolute;
+  padding: 24px;
+  border-radius: 10px;
+  display: none;
+  flex-direction: column;
+  row-gap: 1.6rem;
+  background-color: var(--pure-white);
+  top: 100%;
+  left: 0;
+  width: 11.6rem;
+}
+
+.header .box-menu .nav .ul-nav .company .list-company li a {
+  padding: 0;
+}
+
+.header .box-menu .nav .ul-nav .features:hover .list-features,
+.header .box-menu .nav .ul-nav .company:hover .list-company,
+.header .box-menu .nav .ul-nav .features .list-features:hover,
+.header .box-menu .nav .ul-nav .company .list-company:hover {
+  display: flex;
+}
+
+.header .box-menu .nav .ul-nav .features .list-features li a {
+  display: flex;
+  column-gap: 1.5rem;
+  align-items: center;
+}
+
+.box-menu .nav .ul-nav .company .company-arrow,
+.box-menu .nav .ul-nav .features .features-arrow {
+  width: 8px;
+  height: 4px;
+}
+
+.box-btn {
+  display: flex;
+  column-gap: 4rem;
+}
+
+.box-btn .btn-login,
+.box-btn .btn-register {
+  font-size: 1.5rem;
+  background-color: var(--almost-white);
+  color: var(--medium--gray);
+  border: none;
+  cursor: pointer;
+}
+
+.box-btn .btn-register {
+  padding: 12px 23px;
+  border: 1px solid var(--medium--gray);
+  border-radius: 16px;
+}
+
+.main {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 12.5rem;
+}
+
+.remote-work-container {
+  width: 54rem;
+  padding-top: 11rem;
+}
+
+.remote-work-container .title {
+  font-size: 8rem;
+  color: var(--almost-black);
+}
+
+.remote-work-container .paragrath {
+  line-height: 2.5rem;
+  color: var(--medium--gray);
+  font-size: 1.8rem;
+  text-align: left;
+  width: 44.5rem;
+  margin-top: 4.8rem;
+}
+
+.remote-work-container .btn-learn {
+  width: 16.3rem;
+  height: 5.6rem;
+  background-color: var(--almost-black);
+  color: var(--almost-white);
+  border-radius: 16px;
+  font-size: 1.8rem;
+  margin-top: 5.1rem;
+  transition: ease-in-out 0.5s;
+  border: solid 1px var(--almost-black);
+}
+
+.remote-work-container .btn-learn:hover {
+  background-color: var(--almost-white);
+  color: var(--almost-black);
+}
+
+.remote-work-container .icon-box {
+  display: flex;
+  align-items: center;
+  column-gap: 4rem;
+  margin-top: 11.3rem;
+}
+.img-hero {
+  background-image: url(./assets/images/image-hero-desktop.png);
+  background-size: cover;
+  width: 48rem;
+  height: 64rem;
+}
