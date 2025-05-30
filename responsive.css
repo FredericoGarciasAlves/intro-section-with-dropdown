@@ -25,6 +25,7 @@
 
   .header .icon-menu {
     display: block;
+    cursor: pointer;
   }
 
   .header .icon-menu:hover ~ .box-menu {
@@ -64,6 +65,7 @@
   .header .box-menu .icon-menu-close {
     display: block;
     margin-left: auto;
+    cursor: pointer;
   }
 
   .header .box-menu .nav .ul-nav {
