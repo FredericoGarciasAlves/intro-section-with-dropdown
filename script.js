@@ -53,13 +53,6 @@ btnCompany.addEventListener("mouseleave", (event) => {
   toogleArrow(event);
 });
 
-btnHiddenMenu.addEventListener("click", () => {
-  boxMenu.style.display = "none";
-  setTimeout(() => {
-    boxMenu.style.removeProperty("display");
-  }, 1000);
-});
-
 const mq = window.matchMedia("(max-width: 376px)");
 
 btnFeatures.addEventListener("click", () => {
@@ -67,7 +60,6 @@ btnFeatures.addEventListener("click", () => {
   if (featuresOpen) {
     listFeatures.style.display = "flex";
     featureArrow.src = "./assets/images/icon-arrow-up.svg";
-
     if (mq.matches) {
       btnFeatures.style.paddingBottom = "18.2rem";
     }
@@ -100,4 +92,11 @@ btnCompany.addEventListener("click", () => {
 
 btnShowMenu.addEventListener("click", () => {
   boxMenu.style.display = "flex";
+});
+
+btnHiddenMenu.addEventListener("click", () => {
+  boxMenu.style.display = "none";
+  setTimeout(() => {
+    boxMenu.style.removeProperty("display");
+  }, 10);
 });
